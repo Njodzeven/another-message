@@ -26,6 +26,8 @@
             text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             animation: fadeIn 2s ease-in-out;
             position: relative;
+            margin: 0;
+            padding: 0 10px; /* Ensures spacing on smaller screens */
         }
 
         h1::after {
@@ -136,6 +138,25 @@
             left: 80%;
             animation-delay: 1s;
             animation-duration: 8s;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem; /* Reduce font size on tablets */
+            }
+            footer {
+                font-size: 1rem; /* Adjust footer font size */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 2rem; /* Further reduce font size on mobile */
+            }
+            footer {
+                font-size: 0.9rem; /* Adjust footer for smaller screens */
+            }
         }
     </style>
 </head>
